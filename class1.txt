@@ -1,0 +1,41 @@
+static -> non access specifier
+
+
+Two block types = 1. static 	2. instance
+	syntax -> static{   }     {     }
+# static block is declared outside all methods, instance blocks is declared 
+inside the methods.
+# blocks are declared so that the statements inside the block dont need objects 
+to be created to call them.
+
+
+array -> container storing similar type of data in a single unit.
+# has fixed size
+syntax -> datatype[] reference_Name;	"Variables" also called "reference"
+Accepted norms:
+	String variableName[];		|
+	String[] variableName[];	|Single dimension array
+	String []variableName;		|
+
+value assigning -> 
+datatype[] reference_name={"abc","xyz","pql"};
+#comma separated value initialization.
+#two dimensional array = a[][];
+
+operations: create, delete, read and update
+array is index based
+
+
+accountHolder[]={"",""} -> gives fully qualified address/name (stored reference address of 
+the array where the memory of 0th index is stored) -> accountHolder is pointing to
+fully qualified address which stores the 0th index value.
+
+.length = gives size of array
+
+to access the data from array ->
+accountHolder[1] => referenceName[index]
+
+
+Errors => during compilation
+exceptions => during execution / running code
+
