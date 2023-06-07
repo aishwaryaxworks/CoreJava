@@ -1,0 +1,82 @@
+> Local Variables
+> Variable naming Convensions
+> Static Variables
+
+Task -> java features
+
+Declare diffterent arrays as a static:
+byte		array size is 10
+short
+int		Hospital.java
+long
+float		HospitalRunner.java
+double
+char		Access all array elements using for loop in HospitalRunner.java
+boolean
+String
+
+
+Presentation -> Scope of a variable
+
+
+Instagram -> class instagram, instagram runner
+method: login, logout
+login()-> name
+login()-> name, number of posts	
+login()-> number of followers
+login() -> name, number of followers, status
+=> pass values first implicitly and then explicitly
+
+
+
+FoodStreet ->
+1. declare method as streetNames & pass array as arguments & read all the street names
+-> streetNames(String name[]){}
+2. declare method to accept food name and price
+3. declare method to accept food name, price, type and availabilty
+4. declare method to accept street name and food name and area
+
+
+
+
+Supermarket class ->
+Task1-> 1. method -> item -> accept name of items[]
+	2. method -> item -> nameOfItem[], price[]
+	3. method -> item -> nameOfItem[], price[], availability
+	4. method -> itme -> nameOfItem[], nameOfCompany[]
+Print all the elements of an array using for loop separately
+
+Task2-> 1. class is supermarket - list the following: datamembers=20 and functionalities = 10
+
+Presentation:method overloading, how to achieve method overloading
+
+
+
+create a simple calculator
+1. create method add -> accepts 2 parameters, return sum of two parameters
+			accepts 3 parameters, return sum
+			accepts 4 parameters, return sum
+2. create method subtract -> accepts 2 parameters, return result
+			     accpets 3 parameters, return result
+			     accepts 4 parameters, return result
+3. similarly for method multiplication & division.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

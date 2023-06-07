@@ -1,0 +1,66 @@
+1. class variable is also called static variable.
+2. A local variable stores temporary state; it is declared inside a "method".
+3. 8 primitive datatypes : byte, short, int, float, long, double, bool, char
+4. An "array" is a container object that holds a fixed number of values of a single type.
+5. A variable is a container that can be declared to hold data values/ elements of the specified datatype. 
+	and can be refered to at later stages to fetch the stored value. The two types of variables are "Static and Local".
+6. Datatype is a feature which defines the memory allocated by a particular type to hold a value. 
+	Datatypes are byte, short, int, float, long, double, bool, char, String.
+7. Rules and Naming Conventions : 
+	> variable name starts with small letters and if there are many words, we use camel font to represnt 
+	capital letter for each word without space.
+	> variable name cannot start with capital letter, integers or symbol apart from "$" and "_".
+	> variable name can end with numbers, but not symbols.
+	> local variables must be initialised as soon as they are declared. Static variables can be initialised later in 
+	the methods.
+	> variables can hold values only of the datatype they are declared of, or lesser sized. Ex: short value can be 
+	initialised for int type, double type of data cannot be stored in int type of variable.
+8. The zeroth value or the empty value allocated for the datatype is its initial value:
+	byte = 0 
+	short = 0
+	int = 0
+	float = 0.0
+	long = 0
+	double = 0.0 
+	bool = false
+	char = null
+	String = null
+9. 
+10.
+11. An array is a container which can hold many elements of similar type.
+12. An array has a fixed size and vlaues cannot be initialised exceeding the size. An array can hold values only of 
+	the specified type. 
+13. 
+
+class IndianStates{
+	static states[]={"Karnataka","Kerala","Tamil Nadu","Andra Pradesh","West Bengal","Maharashtra",
+	"Goa","Gujrat","Rajasthan","Madhya Pradesh"};
+}
+
+class IndianStatesRunner{
+	for(int i=0; i<IndianStates.states.length; i++){
+	System.out.println("Five states present in the array are:"+IndianStates.states[i]);
+	if (i==5){
+		break;}
+	}
+	
+	for(int i=0; i<IndianStates.states.length; i++){
+		if(IndianStates.states[i]=="Karnataka"){
+		System.out.println(IndianStates.states[i]);
+		}
+		else{
+		System.out.println("State not found");
+		}
+	
+	}
+}
+
+14. case 1: int result = 0;
+			result += 10;
+			result ++;
+			output => 11
+	
+	case 2: int result = 1;
+			result *= 2;
+			result --;
+			output => 1;
