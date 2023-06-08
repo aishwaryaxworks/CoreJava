@@ -74,7 +74,7 @@ class Patterns {
 				if ((j == 0 || j == n / 2) && i != 0 ||       // print first line of alphabet  
 						i == 0  && j != n / 2 ||              // prints middle line  
 						i == n / 2)  { 
-								System.out.print("*"); 
+								System.out.print(" * "); 
 						}
 				else {
 					System.out.print(" ");  
@@ -85,7 +85,7 @@ class Patterns {
 	}  */
 	
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		int i, j, k, rows=9;     
 		for (i=rows; i>= 1 ; i--){
 			for (j = i; j<rows ; j++){
@@ -102,7 +102,21 @@ class Patterns {
 			}  
 			System.out.println("");  
 		}  
-	}  
+	}  */
+	
+	public static void main (String args[]){
+		for (int i=0; i<=2; i++){
+			for (int j=0; j<=4; j++){
+				if((i==0 && j==0) || (i==1 && j==1) || (i==2 && j==2)|| (i==0 && j==4) || (i==1 && j==3)){
+					System.out.print("# ");
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
 	
 	
 }
