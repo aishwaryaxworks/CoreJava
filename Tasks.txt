@@ -65,6 +65,27 @@ create a simple calculator
 
 
 
+1. count the number of charachters
+2. count the number of words
+3. count the number of vowels
+4. count the number of consonents
+5. count the duplicate characters
+6. find the duplicate characters and replace with space or any other 
+character (replace the whole word not single character)
+
+
+
+
+
+create 3 instance, compare them, and print the output:
+hair
+forest
+water
+
+
+
+
+
 
 
 
