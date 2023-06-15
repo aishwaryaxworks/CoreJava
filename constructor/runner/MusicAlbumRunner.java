@@ -10,9 +10,13 @@ public class MusicAlbumRunner {
 		MusicAlbum album2 = new MusicAlbum("Midnight Serenade","Luna Blue");
 		MusicAlbum album3 = new MusicAlbum("Whispering Shadows","Scarlet Sky", false);
 		MusicAlbum album4 = new MusicAlbum("Enigmatic Embrace","Ember Noir", true, false);
-		MusicAlbum album5 = new MusicAlbum("Eternal Echoes","BTS", true, true, "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX");
-		MusicAlbum album6 = new MusicAlbum("Serenade of Stardust","BTS", false, true, "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX", 43);
-
+		
+		
+		String songs[] = {"Serendipity", "Euphoria", "Singularity", "Fake Love", "IDOL"};
+		MusicAlbum album5 = new MusicAlbum("Eternal Echoes","BTS", true, true, "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX",songs);
+//		MusicAlbum album6 = new MusicAlbum("Serenade of Stardust","BTS", false, true, "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX");
+		
+		
+		MusicAlbum album7 = new MusicAlbum();
 	}
-
 }

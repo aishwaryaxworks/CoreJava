@@ -5,7 +5,7 @@ public class MusicAlbum {
 	public String artistName;
 	public String artistURL;
 	public boolean CD;
-	public int songs;
+	public String songs[];
 	public float albumRating;
 	public boolean availableonline;
 	public String onlinePlatform;
@@ -16,11 +16,13 @@ public class MusicAlbum {
 	}
 	
 	public MusicAlbum(String name) {
+		this();
 		System.out.println("Parameters:1---------------------------");
 		this.albumName = name;
 		System.out.println("Album name:"+this.albumName);
 	}
-		
+	
+	//constructor overloading
 	public MusicAlbum(String albumName,String artistName) {
 		System.out.println("Parameters:2---------------------------");
 		this.albumName = albumName;
@@ -60,7 +62,7 @@ public class MusicAlbum {
 	}
 	
 	public MusicAlbum(String albumName, String artistName, boolean availableOnline, boolean CD, 
-			String artistURL, int songs) {
+			String artistURL, String songs[]) {
 		System.out.println("Parameters:6---------------------------");
 		this.albumName = albumName;
 		this.artistName = artistName;
@@ -70,7 +72,14 @@ public class MusicAlbum {
 		this.songs = songs;
 		System.out.println("Album:"+this.albumName+", Artist:"+this.artistName+", is "
 				+ "it Available Online:"+this.availableonline+", is CD available:"+this.CD+", "
-						+ "About artist:"+this.artistURL+", Num of Songs:"+this.songs);
+						+ "About artist:"+this.artistURL);
+		
+			displayAlbum(songs);
 	}
-
+		
+	public void displayAlbum(String[] songs) {
+		for (int i=0; i<=songs.length-1; i++) {
+			System.out.println("Songs in album:"+this.songs[i]); 
+			} 
+		}
 }

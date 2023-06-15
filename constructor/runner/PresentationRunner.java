@@ -5,7 +5,6 @@ import com.xworkz.constructor.things.Presentation;
 public class PresentationRunner {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Presentation present = new Presentation();
 		
 		System.out.println("Instance 1 -----------");
@@ -140,10 +139,6 @@ public class PresentationRunner {
 		System.out.println("Are breaks given:"+present.breaksGiven+" & is Food previded:"+present.foodProvision);
 		
 		System.out.println("------------------------------");
-		
-		
-		
-
 
 	}
 
