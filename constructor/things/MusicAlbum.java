@@ -80,6 +80,6 @@ public class MusicAlbum {
 	public void displayAlbum(String[] songs) {
 		for (int i=0; i<=songs.length-1; i++) {
 			System.out.println("Songs in album:"+this.songs[i]); 
-			} 
-		}
+		} 
+	}
 }
