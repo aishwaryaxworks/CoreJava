@@ -6,7 +6,5 @@ public class BlackTicketRunner {
 
 	public static void main(String[] args) {
 		BlackTicket ticket = new BlackTicket();
-
 	}
-
 }
