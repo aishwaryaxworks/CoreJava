@@ -39,7 +39,7 @@ public class ComicBook {
 		this.title = title;
 		this.authors = authors;
 		for (int i=0; i<=authors.length-1; i++) {
-			System.out.println("Title:"+this.title+", Authors:"+this.authors);
+			System.out.println("Title:"+this.title+", Authors:"+this.authors[i]);
 		} 
 	}
 	
@@ -50,7 +50,7 @@ public class ComicBook {
 		this.artists = artists;
 		for (int i=0; i<=artists.length-1; i++) {
 			System.out.println("Title:"+this.title+", Page Count:"+this.pageCount+", "
-					+ "Publisher:"+this.publisher+", Artists:"+this.artists);
+					+ "Publisher:"+this.publisher+", Artists:"+this.artists[i]);
 		} 
 	}
 

@@ -22,7 +22,7 @@ public class Flights {
 		this.duration = duration;		
 	}
 			
-	public void displayCar() {
+	public void displayFlight() {
 		System.out.println("Flight number:"+this.flightNumber+", Airline:"+this.airline+", Origin:"+this.origin+
 				", Destination:"+this.destination+", Duration:"+this.duration);
 	}

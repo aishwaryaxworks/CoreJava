@@ -14,7 +14,7 @@ public class Irctc {
 	
 	//assigning values to variables using constructor
 	public Irctc(String name, int price, String location, String seatNumber) {
-		System.out.println("Argument constructor.");
+		System.out.println("All argument constructor.");
 		this.name=name;
 		this.price=price;
 		this.location=location;
