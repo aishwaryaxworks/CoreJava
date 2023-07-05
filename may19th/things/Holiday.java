@@ -1,6 +1,7 @@
 package com.xworks.may19th.things;
 
 public class Holiday {
+	
 	public String reason;
 	public int numOfDays;
 	
