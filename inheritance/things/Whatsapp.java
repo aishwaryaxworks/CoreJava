@@ -1,13 +1,21 @@
 package com.xworkz.inheritance.things;
 
 public class Whatsapp extends Application{
-	public String personName;
-	long phoneNum;
-	int numOfContacts;
-	int numOfGroups;
+	protected String personName;
+	protected long phoneNum;
+	protected int numOfContacts;
+	protected int numOfGroups;
 	public int numOfChats;
 	public boolean isEncrypted;
 	public boolean attachPhoto;
+	
+	static {
+		System.out.println("Static block in Whatsapp.");
+	}
+	
+	{
+		System.out.println("Instance block of Whatsapp.");
+	}
 	
 	public Whatsapp() {
 		System.out.println("Whatsapp-No arguement constructor. Version 1 !");
