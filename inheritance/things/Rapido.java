@@ -24,5 +24,5 @@ public class Rapido {
 	public void display() {
 		System.out.println("Display available vehicle.");
 	}
-
+	
 }
