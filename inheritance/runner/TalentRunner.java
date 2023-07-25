@@ -19,5 +19,9 @@ public class TalentRunner {
 		Talent talent3 = new Talent("Cooking",7);
 		boolean result2 = talent2.equals(talent3);
 		System.out.println(result2);
+		
+		Talent talent5 = new Talent();
+		int result3 = talent5.hashCode();
+		System.out.println(result3);
 	}
 }

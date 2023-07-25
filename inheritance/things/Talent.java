@@ -1,6 +1,6 @@
 package com.xworkz.inheritance.things;
 
-public class Talent{
+public class Talent extends Object{
 	//	String skill="MultiTasking";
 	String skill;
 	//	int experience=2;
@@ -38,4 +38,10 @@ public class Talent{
 		
 		return false;
 	}
+	
+	@Override
+	public int hashCode() {
+		return 70;
+	}
+	
 }
