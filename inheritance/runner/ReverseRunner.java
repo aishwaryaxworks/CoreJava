@@ -2,7 +2,7 @@ package com.xworkz.inheritance.runner;
 
 public class ReverseRunner {
 	public static void main(String[] args) {
-		String name = "This is sleeping time. It is not good to sleeping .";
+		String name = "This is sleeping time. It is not good for sleeping .";
 		String[] wordList = name.split(" ");
 		String reverseWord="";
 
