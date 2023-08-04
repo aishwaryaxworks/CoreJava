@@ -21,5 +21,7 @@ public class ReverseRunner {
 		for(int i = 0; i<wordList.length; i++) {
 			System.out.print(wordList[i]+" ");
 		}
+		
+		
 	}
 }

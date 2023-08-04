@@ -27,13 +27,14 @@ public class StringPrograms {
 		}
 		
 		//case4
-		String sentence3="            good morning guys, how are you            ";
-		/*for(int i=0; i<sentenceList.length;i++) {
+		String sentence3="    good morning guys, how are you    ";
+		String[] sentence3List=sentence3.split(" ");
+		for(int i=0; i<sentence3List.length;i++) {
 			if(sentenceList[i].equals(" ")) {
 				System.out.println("Sentence contains blank spaces.");
 			}
-		}*/
-		sentence3.trim();
+		}
+		//sentence3.trim();
 		
 		//case5
 		
