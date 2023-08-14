@@ -18,7 +18,7 @@ public class OlympicRepositoryImpl implements OlympicRepository {
 			System.err.println("Dataset is full ...!");
 		}
 	}
-
+	
 	@Override
 	public void display() {
 		System.out.println("invoking display method from repository interface !");

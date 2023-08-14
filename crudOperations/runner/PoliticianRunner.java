@@ -20,6 +20,26 @@ public class PoliticianRunner {
 		repo.save("Mamata Banerjee");
 		
 		repo.display();
+		System.out.println("--------------------");
+		
+		boolean found = repo.isExists("prathap");
+		System.out.println("Found:"+found);
+		System.out.println("--------------------");
+		
+		String res1 = repo.findReturnUpperCase("Bommai");
+		System.out.println("Finding Upper Case name:"+res1);
+		System.out.println("--------------------");
+		
+		String[] res2 = repo.findStartsWith("M");
+		for(int i=0;i<res2.length;i++) {
+			String str = res2[i];
+			if(str!=null) {
+				System.out.println("Name is:"+str);
+			}
+		
+		}
+		
+		
 	}
 
 }
