@@ -1,7 +1,7 @@
 package com.xworkz.crudOperations.runner;
 
+import com.xworkz.crudOperations.app.CountriesRepositoryImpl;
 import com.xworkz.crudOperations.interfaces.CountriesRepository;
-import com.xworkz.crudOperations.interfaces.CountriesRepositoryImpl;
 
 public class CountriesRunner {
 
