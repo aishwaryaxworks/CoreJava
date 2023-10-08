@@ -1,8 +1,12 @@
 package com.xworkz.crudOperations.services;
 
+import com.xworkz.crudOperations.app.CosmeticRepositoryImpl;
 import com.xworkz.crudOperations.dto.CosmeticDTO;
+import com.xworkz.crudOperations.interfaces.CosmeticRepository;
+import com.xworkz.crudOperations.util.ValidateUtil;
 
 public class CosmeticServiceImpl implements CosmeticService{
+	CosmeticRepository crepo = new CosmeticRepositoryImpl();
 	
 	@Override
 	public boolean validateandsave(CosmeticDTO cdto) {
@@ -40,5 +44,31 @@ public class CosmeticServiceImpl implements CosmeticService{
 			System.out.println("bad data");
 		}
 		return true;
+	}
+
+	@Override
+	public CosmeticDTO findbyCosmeticName(String name) {
+		boolean isValid=ValidateUtil.validateString(name);
+		if(isValid) {
+			System.out.println("Name valid... sending to repo...");
+			CosmeticDTO foundDTO = crepo.findbyCosmeticName(name);
+			return foundDTO;
+		}else {
+			System.err.println("name not valid...");
+		}
+		return null;
+	}
+
+	@Override
+	public CosmeticDTO findbyCosmeticNameandBrand(String name, String brand) {
+		boolean isNameValid=ValidateUtil.validateString(name);
+		boolean isBrandValid=ValidateUtil.validateString(brand);
+		if(isNameValid && isBrandValid) {
+			System.out.println("Name and brand valid... sending to repo...");
+			CosmeticDTO foundDTO = crepo.findbyCosmeticNameandBrand(name, brand);
+			return foundDTO;
+		}
+		System.err.println("Name and brand not valid...");
+		return null;
 	}
 }

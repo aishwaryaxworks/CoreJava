@@ -5,11 +5,21 @@ import com.xworkz.crudOperations.interfaces.CourtRepository;
 
 public class CourtRepoImpl implements CourtRepository{
 	CourtDTO[] dto = new CourtDTO[ITEMS];
+	private int index=0;
 	
 	@Override
 	public void save(CourtDTO courtdto) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Invoking save in repo...");
+		if(index<ITEMS) {
+			this.dto[index]=courtdto;
+			System.out.println("Court is saved at index:"+this.index);
+			this.index++;
+		}else {
+			System.err.println("dataset full...");
+			//stop execution
+			//data or logic : Logic -> Runtime exception    Data -> checked exception
+			throw new RuntimeException("Index is full, cannot save more than 3 elements...");
+		}
 	}
 	
 	@Override
