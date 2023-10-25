@@ -73,7 +73,8 @@ public class TestRunner {
 				.collect(Collectors.toList());
 		adByName.forEach(a -> System.out.println(a));
 		System.out.println("------------------------------------------------------");
-
+//2,4,6,7,9,11,67,9,7---> filter:>7: 9,11,67,9: : map : L 
+		//--> map
 		// brandDTO by product dto
 		Collection<BrandDTO> brByPr = prColl.stream().filter(p -> p == prd10).map(b -> b.getBrand())
 				.collect(Collectors.toList());
@@ -87,9 +88,9 @@ public class TestRunner {
 		System.out.println("------------------------------------------------------");
 
 		// all products by max price
-		Optional<ProductDTO> prdto = prColl.stream().sorted((m1, m2) -> m2.getPrice().compareTo(m1.getPrice()))
-				.findFirst();
+		Optional<ProductDTO> prdto = prColl.stream().max((m1, m2) -> m2.getPrice().compareTo(m1.getPrice()));
 		prdto.ifPresent(p -> System.out.println(p));
+		
 		System.out.println("------------------------------------------------------");
 
 		// all product dto by type, sort by price in desc
@@ -105,29 +106,29 @@ public class TestRunner {
 		prByQuant.forEach(p -> System.out.println(p));
 		System.out.println("------------------------------------------------------");
 		
-		//List Iterator and Iterator
-		List<ProductDTO> pdtoAll = prColl.stream().collect(Collectors.toList());
-		Iterator<ProductDTO> itr = pdtoAll.iterator();
-		while(itr.hasNext()) {
-			ProductDTO p = itr.next();
-			System.out.println("Product dto using Iterator:---->>>");
-			System.out.println(p);
-			if(itr.equals(prd4)) {
-				itr.remove();
-			}
-		}
-		
-		ListIterator<ProductDTO> listItr = pdtoAll.listIterator();
-		while(listItr.hasNext()) {
-			ProductDTO p1 = listItr.next();
-			System.out.println("List iterator next fuction:--->"+p1);
-			ProductDTO p2 = listItr.previous();
-			System.out.println("List iterator prev funct:---->"+p2);
-			if(listItr.equals(prd8)) {
-				listItr.add(prd9);
-				listItr.remove();
-			}
-		}
+//		//List Iterator and Iterator
+//		List<ProductDTO> pdtoAll = prColl.stream().collect(Collectors.toList());
+//		Iterator<ProductDTO> itr = pdtoAll.iterator();
+//		while(itr.hasNext()) {
+//			ProductDTO p = itr.next();
+//			System.out.println("Product dto using Iterator:---->>>");
+//			System.out.println(p);
+//			if(itr.equals(prd4)) {
+//				itr.remove();
+//			}
+//		}
+//		
+//		ListIterator<ProductDTO> listItr = pdtoAll.listIterator();
+//		while(listItr.hasNext()) {
+//			ProductDTO p1 = listItr.next();
+//			System.out.println("List iterator next fuction:--->"+p1);
+//			ProductDTO p2 = listItr.previous();
+//			System.out.println("List iterator prev funct:---->"+p2);
+//			if(listItr.equals(prd8)) {
+//				listItr.add(prd9);
+//				listItr.remove();
+//			}
+//		}
 		
 	}
 
